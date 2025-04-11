@@ -57,6 +57,17 @@ export default function Login() {
             />
           </div>
 
+          <p className="text-sm text-center text-gray-400 mt-4">
+            ¿No tenés cuenta?{" "}
+            <span
+              className="text-orange-400 cursor-pointer hover:underline"
+              onClick={() => navigate("/register")}
+            >
+              Registrate
+            </span>
+          </p>
+
+
           <button
             type="submit"
             className="w-full py-2 rounded bg-orange-500 hover:bg-orange-600 transition font-semibold text-white"
