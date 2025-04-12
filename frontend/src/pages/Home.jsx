@@ -28,9 +28,12 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen">
-      <Sidebar />
+      {/* Sidebar envuelto en sticky */}
+      <div className="sticky top-0 z-10">
+        <Sidebar />  {/* Sidebar a la izquierda */}
+      </div>
 
-      <main className="flex-1 bg-gray-950 text-white p-8 overflow-y-auto">
+      <main className="flex-1 bg-gray-950 text-white p-8 overflow-y-auto"> {/* Eliminamos el ml-64 */}
         <div className="max-w-7xl mx-auto space-y-8">
           {/* Panel de bienvenida */}
           <section className="bg-gray-900 rounded-xl p-6 shadow-lg">
@@ -42,8 +45,6 @@ export default function Home() {
 
           {/* KPI Cards */}
           <KpiStats />
-
-
 
           {/* Cards de resumen */}
           <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">

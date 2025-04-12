@@ -21,7 +21,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="min-h-screen w-64 bg-gradient-to-b from-gray-900 to-black text-white flex flex-col justify-between py-8 px-4 shadow-xl border-r border-gray-700">
+    <div className="min-h-screen w-64 bg-gradient-to-b from-gray-900 to-black text-white flex flex-col justify-between py-8 px-4 shadow-xl border-r border-gray-700 sticky top-0">
       <div>
         <h1 className="text-3xl font-bold text-center text-orange-400 mb-10 tracking-wide">TraderPath</h1>
 

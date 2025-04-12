@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Sidebar from "../components/sidebar/Sidebar";
+import Sidebar from "../components/sidebar/Sidebar"; // Importamos Sidebar
 import FormTecnico from "../components/registroTrade/FormTecnico";
 import FormEmocional from "../components/registroTrade/FormEmocional";
 import FormEvaluacion from "../components/registroTrade/FormEvaluacion";
@@ -76,8 +76,12 @@ export default function RegistroTrade() {
 
   return (
     <div className="flex min-h-screen">
-      <Sidebar />
-      <main className="flex-1 bg-gray-950 text-white p-8 overflow-y-auto">
+      {/* Sidebar envuelto en sticky */}
+      <div className="sticky top-0 z-10">
+        <Sidebar /> {/* Sidebar a la izquierda */}
+      </div>
+
+      <main className="flex-1 bg-gray-950 text-white p-8 overflow-y-auto"> 
         <div className="max-w-4xl mx-auto bg-gray-900 rounded-xl shadow-md p-6 space-y-6">
           <h1 className="text-2xl font-bold text-orange-400 mb-4">Registrar Operación</h1>
 
