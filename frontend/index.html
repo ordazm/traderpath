@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TraderPath</title>
+
+    <!-- Cargar fuente Inter desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+
+    <!-- Asegúrate de que TailwindCSS cargue los estilos -->
+    <link href="/dist/tailwind.css" rel="stylesheet"> <!-- si es que usas tailwind como hoja de estilos global -->
+
   </head>
-  <body>
+  <body class="font-sans"> <!-- Asignamos la fuente global 'Inter' -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -1,4 +1,4 @@
-export default function TradeTable({ trades = [] }) {
+export default function TradeList({ trades = [] }) {
     if (!trades.length) {
       return (
         <p className="text-sm text-gray-400">

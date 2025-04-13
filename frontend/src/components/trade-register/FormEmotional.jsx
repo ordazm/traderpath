@@ -1,4 +1,4 @@
-export default function FormEmocional({ data, onChange }) {
+export default function FormEmotional({ data, onChange }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {/* Emoción dominante */}

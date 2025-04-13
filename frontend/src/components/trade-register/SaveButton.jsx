@@ -1,4 +1,4 @@
-export default function BotonGuardar({ onClick }) {
+export default function SaveButton({ onClick }) {
   return (
     <button
       type="button"

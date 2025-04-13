@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import Sidebar from "../components/sidebar/Sidebar"; // Importamos Sidebar
-import FormTecnico from "../components/registroTrade/FormTecnico";
-import FormEmocional from "../components/registroTrade/FormEmocional";
-import FormEvaluacion from "../components/registroTrade/FormEvaluacion";
-import BotonGuardar from "../components/registroTrade/BotonGuardar";
-import TradeTable from "../components/registroTrade/TradeTable";
+import FormTechnical from "../components/trade-register/FormTechnical";
+import FormEmotional from "../components/trade-register/FormEmotional";
+import FormEvaluation from "../components/trade-register/FormEvaluation";
+import SaveButton from "../components/trade-register/SaveButton";
+import TradeList from "../components/trade-register/TradeList";
 import axios from "axios";
 
-export default function RegistroTrade() {
+export default function TradeRegister() {
   const [formData, setFormData] = useState({
     pair: "",
     direction: "",
@@ -87,28 +87,28 @@ export default function RegistroTrade() {
 
           <section className="space-y-4">
             <h2 className="text-lg text-white font-semibold">Datos Técnicos</h2>
-            <FormTecnico data={formData} onChange={handleChange} />
+            <FormTechnical data={formData} onChange={handleChange} />
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-lg text-white font-semibold">Estado Emocional</h2>
-            <FormEmocional data={formData} onChange={handleChange} />
+            <h2 className="text-lg text-white font-semibold">Estado Emotional</h2>
+            <FormEmotional data={formData} onChange={handleChange} />
           </section>
 
           <section className="space-y-4">
             <h2 className="text-lg text-white font-semibold">Reflexión y Resultado</h2>
-            <FormEvaluacion data={formData} onChange={handleChange} />
+            <FormEvaluation data={formData} onChange={handleChange} />
           </section>
 
           <div className="text-right mt-6">
-            <BotonGuardar onClick={handleSubmit} />
+            <SaveButton onClick={handleSubmit} />
           </div>
         </div>
 
         {/* Bloque de historial */}
         <section className="max-w-4xl mx-auto mt-10 space-y-4">
           <h2 className="text-lg font-semibold text-white">Tus operaciones registradas</h2>
-          <TradeTable trades={userTrades} />
+          <TradeList trades={userTrades} />
         </section>
       </main>
     </div>

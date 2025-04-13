@@ -1,4 +1,4 @@
-export default function FormEvaluacion({ data, onChange }) {
+export default function FormEvaluation({ data, onChange }) {
     return (
       <div className="grid grid-cols-1 gap-4">
         {/* ¿Seguiste tu plan? */}
@@ -27,7 +27,7 @@ export default function FormEvaluacion({ data, onChange }) {
             <option value="">Seleccionar</option>
             <option>A (ejecución impecable)</option>
             <option>B (pequeños detalles por mejorar)</option>
-            <option>C (fuera del plan, emocional)</option>
+            <option>C (fuera del plan, emotional)</option>
           </select>
         </div>
   

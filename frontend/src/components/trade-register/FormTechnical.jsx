@@ -1,4 +1,4 @@
-export default function FormTecnico({ data, onChange }) {
+export default function FormTechnical({ data, onChange }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {/* Par operado */}
